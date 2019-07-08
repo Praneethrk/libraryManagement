@@ -1,0 +1,6 @@
+a = datetime.strptime(login_info[2], "%d/%m/%Y")
+                b = d.strftime('%d/%m/%Y')
+                delay = b - a
+                if delay.days > 15:
+                    Label(issue_book_screen, text=delay.days+' Fine to be payed!', font='verdana').pack()
+                    Label(text='').pack()
